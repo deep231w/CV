@@ -17,7 +17,7 @@ export interface ResumeData {
   personalWebsiteUrl: string;
   contact: {
     email: string;
-    // tel: string;
+    tel: string;
     social: Array<{
       name: string;
       url: string;
