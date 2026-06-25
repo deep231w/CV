@@ -49,10 +49,11 @@ export const RESUME_DATA: ResumeData = {
       link: "",
       badges: [
         "React",
-        "TypeScript",
+        "JavaScript",
         "Frontend",
-        "REST APIs",
-        "AI"
+        "LLM",
+        "MUI",
+        "Css"
       ],
       title: "Frontend Developer Intern",
       start: "Apr 2025",
