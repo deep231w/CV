@@ -124,7 +124,7 @@ export const RESUME_DATA: ResumeData = {
       description: "Real-time chat application featuring WebSocket communication, authentication, and message persistence.",
       link: {
         label: "Chat Application",
-        href: "chat-app-delta-steel.vercel.app",
+        href: "https://chat-app-delta-steel.vercel.app",
       },
     },
     {
