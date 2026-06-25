@@ -77,7 +77,7 @@ export const RESUME_DATA: ResumeData = {
         "Open Source"
       ],
       title: "Open Source Contributor",
-      start: "2024",
+      start: "2026",
       end: null,
       description:
         "Actively explored and contributed to open-source projects to understand large-scale application architecture and development workflows.",
@@ -123,7 +123,7 @@ export const RESUME_DATA: ResumeData = {
       description: "Real-time chat application featuring WebSocket communication, authentication, and message persistence.",
       link: {
         label: "Chat Application",
-        href: "https://github.com/deep231w/ChatApp",
+        href: "chat-app-delta-steel.vercel.app",
       },
     },
     {
