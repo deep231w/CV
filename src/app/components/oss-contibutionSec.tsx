@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
 import type { RESUME_DATA } from "@/data/resume-data";
+import Image from "next/image";
 
 interface ProjectLinkProps {
   title: string;
@@ -42,9 +43,10 @@ interface OssCardProps {
   title: string;
   description: string;
   link?: string;
+  coverImg:string
 }
 
-function OssCrd({title  ,link , description}:OssCardProps){
+function OssCrd({title  ,link , description ,coverImg}:OssCardProps){
     return (
         <Card className="flex h-full flex-col overflow-hidden border p-3">
             <CardHeader>
@@ -52,17 +54,19 @@ function OssCrd({title  ,link , description}:OssCardProps){
                 <CardTitle className="text-base">
                     <OssLink title={title} link={link} />
                 </CardTitle>
-                <CardDescription
-                    className="text-pretty font-mono text-xs print:text-[10px]"
-                    aria-label="Project description"
-                >
-                    {/* {description} */}
-                </CardDescription>
+
                 </div>
             </CardHeader>
             <CardContent className="mt-auto flex">
                 {/* <ProjectTags tags={tags} /> */}
+                <Image height={180} width={210} alt={"cover image"} src={coverImg}/>
             </CardContent>
+            <CardDescription
+                className="text-pretty font-mono text-xs print:text-[10px]"
+                aria-label="Project description"
+            >
+                {description}
+            </CardDescription>
         </Card>
     )
 }
@@ -91,6 +95,7 @@ export default function OssContributions({ossConstributions}:OsssProps){
                     title={project.title}
                     description={project.description}
                     link={project.link?.href}
+                    coverImg={project.coverImg}
                 />
                 </article>
             ))}
