@@ -8,6 +8,7 @@ import { Projects } from "./components/projects";
 import { Skills } from "./components/skills";
 import { Summary } from "./components/summary";
 import { WorkExperience } from "./components/work-experience";
+import OssContributions from "./components/oss-contibutionSec";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} - Resume`,
@@ -93,6 +94,12 @@ export default function ResumePage() {
               style={{ animationDelay: "150ms" }}
             >
               <WorkExperience work={RESUME_DATA.work} />
+            </div>
+            <div
+              className="animate-fade-in"
+              style={{ animationDelay: "225ms" }}
+            >
+              <OssContributions/>
             </div>
             <div
               className="animate-fade-in"
