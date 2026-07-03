@@ -99,7 +99,7 @@ export default function ResumePage() {
               className="animate-fade-in"
               style={{ animationDelay: "225ms" }}
             >
-              <OssContributions/>
+              <OssContributions ossConstributions={RESUME_DATA.ossConstributions}/>
             </div>
             <div
               className="animate-fade-in"
