@@ -50,4 +50,13 @@ export interface ResumeData {
       href: string;
     };
   }>;
+  ossConstributions:Array<{
+    title:string;
+    type:string;
+    description:string;
+    coverImg:string;
+    link?:{
+      href:string
+    }
+  }>;
 }

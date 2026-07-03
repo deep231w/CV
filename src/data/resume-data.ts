@@ -43,6 +43,26 @@ export const RESUME_DATA: ResumeData = {
       end:"2022"
     }
   ],
+  ossConstributions: [
+    {
+      title: "fix/email-validation-22406",
+      type: "pr",
+      description: "Resolved an email validation mismatch by adding client-side length validation and ensuring the UI updates only after a successful server response.",
+      coverImg: "/images/twenty-crm.jpg",
+      link: {
+        href: "https://github.com/twentyhq/twenty/pull/22426"
+      }
+    },
+    {
+      title: "Duplicate React key warning in CustomerOrderSection",
+      type: "issue",
+      description: "Reported a React warning caused by duplicate TanStack Table column IDs, identified the root cause, and proposed using unique column IDs to prevent duplicate React keys.",
+      coverImg: "/images/medusa.webp",
+      link: {
+        href:"https://github.com/medusajs/medusa/issues/15485"
+      }
+    }
+  ],
   work: [
     {
       company: "A2D Innovation Pvt. Ltd.",
