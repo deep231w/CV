@@ -43,12 +43,25 @@ interface OssCardProps {
   title: string;
   description: string;
   link?: string;
-  coverImg:string
+  coverImg:string;
+  type:string
 }
 
-function OssCrd({title  ,link , description ,coverImg}:OssCardProps){
+function OssCrd({title  ,link , description ,coverImg ,type}:OssCardProps){
+    const blue ="#2c289d", yellow="#a2aa15";
+    const brColor=type == "pr" ? blue :yellow;
+
     return (
-        <Card className="flex h-full flex-col overflow-hidden border p-3">
+        <Card  
+            className="flex h-full flex-col overflow-hidden border p-3" 
+            style={{
+                border:`1px solid ${brColor}`,
+                borderRadius:"10px",
+                boxShadow:` 0 0 2px ${brColor},
+                            0 0 4px ${brColor},
+                            0 0 8px ${brColor}`,
+            }}
+        >
             <CardHeader>
                 <div className="space-y-1">
                 <CardTitle className="text-base">
@@ -96,6 +109,7 @@ export default function OssContributions({ossConstributions}:OsssProps){
                     description={project.description}
                     link={project.link?.href}
                     coverImg={project.coverImg}
+                    type={project.type}
                 />
                 </article>
             ))}
