@@ -48,26 +48,23 @@ interface OssCardProps {
 }
 
 function OssCrd({title  ,link , description ,coverImg ,type}:OssCardProps){
-    const blue ="#2c289d", yellow="#a2aa15";
-    const brColor=type == "pr" ? blue :yellow;
+    // const blue ="#2c289d", yellow="#a2aa15";
+    // let brColor ="#000000";
+    // brColor=type == "pr" ? blue :yellow;
+    // const borderClass =
+    //     type === "pr"
+    //         ? "hover:border-blue-600"
+    //         : "hover:border-yellow-500";
 
     return (
         <Card  
-            className="flex h-full flex-col overflow-hidden border p-3" 
-            style={{
-                border:`1px solid ${brColor}`,
-                borderRadius:"10px",
-                boxShadow:` 0 0 2px ${brColor},
-                            0 0 4px ${brColor},
-                            0 0 8px ${brColor}`,
-            }}
+            className={`flex h-full flex-col overflow-hidden border p-3`}  
         >
             <CardHeader>
                 <div className="space-y-1">
-                <CardTitle className="text-base">
-                    <OssLink title={title} link={link} />
-                </CardTitle>
-
+                    <CardTitle className="text-base">
+                        <OssLink title={title} link={link} />
+                    </CardTitle>
                 </div>
             </CardHeader>
             <CardContent className="mt-auto flex">

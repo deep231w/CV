@@ -55,6 +55,8 @@ export interface ResumeData {
     type:string;
     description:string;
     coverImg:string;
-    link:string
+    link?:{
+      href:string
+    }
   }>;
 }
