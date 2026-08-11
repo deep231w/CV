@@ -54,6 +54,16 @@ export const RESUME_DATA: ResumeData = {
       }
     },
     {
+      title: "fix: preserve currency precision when opening field editor",
+      type: "pr",
+      description:
+        "Investigated and reproduced a currency precision issue involving IMask initialization and field decimal settings. Implemented a precision-preserving scale calculation and added unit tests, with the contribution reviewed and superseded by a broader core-team fix.",
+      coverImg: "/images/twenty-crm.jpg",
+      link: {
+        href: "https://github.com/twentyhq/twenty/pull/23861",
+      },
+    },
+    {
       title: "Duplicate React key warning in CustomerOrderSection",
       type: "issue",
       description: "Reported a React warning caused by duplicate TanStack Table column IDs, identified the root cause, and proposed using unique column IDs to prevent duplicate React keys.",
