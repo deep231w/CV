@@ -45,6 +45,16 @@ export const RESUME_DATA: ResumeData = {
   ],
   ossConstributions: [
     {
+      title: "fix(core): load order line relation custom fields",
+      type: "pr",
+      description:
+        "Fixed missing OrderLine relation custom fields during guest order merging by discovering and loading dynamic custom-field relations from TypeORM metadata instead of relying on hardcoded relation paths.",
+      coverImg: "/images/vendure.jpg",
+      link: {
+        href: "https://github.com/vendurehq/vendure/pull/5151",
+      },
+    },
+    {
       title: "fix/email-validation-22406",
       type: "pr",
       description: "Resolved an email validation mismatch by adding client-side length validation and ensuring the UI updates only after a successful server response.",
