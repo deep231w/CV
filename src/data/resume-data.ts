@@ -49,7 +49,7 @@ export const RESUME_DATA: ResumeData = {
       type: "pr",
       description:
         "Fixed missing OrderLine relation custom fields during guest order merging by discovering and loading dynamic custom-field relations from TypeORM metadata instead of relying on hardcoded relation paths.",
-      coverImg: "/images/vendure.jpg",
+      coverImg: "/images/vendure.jpeg",
       link: {
         href: "https://github.com/vendurehq/vendure/pull/5151",
       },
