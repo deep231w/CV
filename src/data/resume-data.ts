@@ -5,9 +5,10 @@ export const RESUME_DATA: ResumeData = {
   initials: "De",
   location: "Bhubaneswar, Odisha, India",
   locationLink: "https://www.google.com/maps/place/india",
-  about: "Full Stack Developer",
+  about: "Software Engineer",
   summary:
-    "Full Stack Developer focused on building web applications using React, Next.js, TypeScript, Node.js, and PostgreSQL. I enjoy learning how systems work from frontend interfaces to backend services and databases, and I'm constantly exploring new technologies to improve my skills.",  avatarUrl: "/deep.jpg",
+    "Software Engineer focused on backend development, database systems, and building reliable software. I work with Go, Node.js, TypeScript, and PostgreSQL, while also building web applications with React and Next.js. I'm interested in understanding how software works under the hood, from API design and data modeling to system architecture, performance, and infrastructure",
+    avatarUrl:"/deep.jpg",
     personalWebsiteUrl: "",
     contact: {
       email: "maharanad449@gmail.com",
