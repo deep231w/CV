@@ -62,16 +62,25 @@ function OssCrd({title  ,link , description ,coverImg ,type}:OssCardProps){
                     </CardTitle>
                 </div>
             </CardHeader>
-            <CardContent className="mt-auto flex">
-                {/* <ProjectTags tags={tags} /> */}
-                <Image height={180} width={210} alt={"cover image"} src={coverImg}/>
-            </CardContent>
-            <CardDescription
-                className="text-pretty font-mono text-xs print:text-[10px]"
-                aria-label="Project description"
+            <div
+              className="flex flex-row md:flex-col"
             >
-                {description}
-            </CardDescription>
+              <CardContent className="mt-auto flex hidden md:block">
+                <Image 
+                  height={180} 
+                  width={210} 
+                  alt={"cover image"} 
+                  src={coverImg}
+                  // className="h-auto w-full"
+                />
+              </CardContent>
+              <CardDescription
+                  className="text-pretty font-mono text-xs print:text-[10px]"
+                  aria-label="Project description"
+              >
+                  {description}
+              </CardDescription>
+            </div>
         </Card>
     )
 }
@@ -91,7 +100,6 @@ type OSSContribution = {
 };
 
 export default function OssContributions({ossConstributions}:OsssProps){
-  console.log("oss- ", ossConstributions);
   let [ossCons, setOssCons] = useState<OSSContribution[]>([])
   const [limit, setLimit]= useState(3)
   useEffect(()=>{
