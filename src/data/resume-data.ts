@@ -56,6 +56,16 @@ export const RESUME_DATA: ResumeData = {
       },
     },
     {
+      title: "fix: link scenario errors to documentation",
+      type: "pr",
+      description:
+        "Added documentation links to scenario parsing and archetype expansion errors, with tests verifying the links and anchors.",
+      coverImg: "/images/pikopod.svg",
+      link: {
+        href: "https://github.com/Pikopod/pikopod/pull/133",
+      },
+    },
+    {
       title: "fix/email-validation-22406",
       type: "pr",
       description: "Resolved an email validation mismatch by adding client-side length validation and ensuring the UI updates only after a successful server response.",
@@ -82,7 +92,17 @@ export const RESUME_DATA: ResumeData = {
       link: {
         href:"https://github.com/medusajs/medusa/issues/15485"
       }
-    }
+    },
+    {
+      title: "fix: clarify docs import LLM configuration hint",
+      type: "pr",
+      description:
+        "Clarified LLM configuration guidance for documentation imports and added a test to verify the error message.",
+      coverImg: "/images/pikopod.svg",
+      link: {
+        href: "https://github.com/Pikopod/pikopod/pull/136",
+      },
+    },
   ],
   work: [
     {
